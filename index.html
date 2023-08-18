@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross Window Cookies and Window.postMessage Demo</title>
+  <script src="./cross-window-cookies.js" defer></script>
+  <!-- <script src="./postmessage.js" defer></script> -->
+</head>
+<body>
+  <h1>Cross Window Cookies Demo</h1>
+  <button id="checkCookieValidity">Check cookie validity</button>
+  <p>Cookie validity: <span id="cookieValidity">Unknown</span></p>
+
+  <button id="refreshCookieWithIframe">Solution 1: Refresh cookie with iframe</button>
+  <button id="refreshCookieInNewTab">Solution 2: Refresh cookie in new tab</button>
+  <button id="refreshCookieWithFetch">Solution 3: Refresh cookie with fetch request</button>
+
+  <!-- <h1>Window.postMessage Demo</h1>
+  <button id="openTab">Open Tab</button>
+  <button id="postMessageToTab">Post message to tab</button>
+
+  <p>Messages received:</p>
+  <ul id="messages"></ul> -->
+</body>
+</html>

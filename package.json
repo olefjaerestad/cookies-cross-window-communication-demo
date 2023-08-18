@@ -1,0 +1,22 @@
+{
+    "name": "cross-window-cookies-postmessage-demo",
+    "version": "0.0.1",
+    "description": "Cross Window Cookies and Window.postMessage demo",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": [
+      "cookies",
+      "postmessage",
+      "authentication"
+    ],
+    "author": "Ole Kristian Fjaerestad",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+      "@fastify/cookie": "^9.0.4",
+      "fastify": "^4.21.0"
+    }
+  }
+  
