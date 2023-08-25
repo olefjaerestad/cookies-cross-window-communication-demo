@@ -9,6 +9,9 @@ document.getElementById('postMessageToTab').addEventListener('click', () => {
 });
 
 window.addEventListener('message', (e) => {
+  // Important! https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage#security_concerns
+  if (e.origin !== 'http://localhost:3000') return;
+  
   const text = e.data;
   const listItem = document.createElement('li');
   listItem.innerText = text;
